@@ -1,0 +1,202 @@
+@charset "UTF-8";
+/*#247e4b - cor header*/
+
+@font-face {
+    font-family: iDroid;
+    src: url(fontes/idroid.otf);
+    font-weight: bold;
+  }
+
+body {
+    margin: 0%;
+    padding: 0%;
+    background-color: #c5ebd6;
+}
+
+header {
+    background-color: #247e4b;    
+    width: 100%;
+    padding-top: 1px;
+    padding-bottom: 10px;    
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.781);
+}
+
+h1.titulopag {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    color: white;
+}
+
+h2.subtitulopag {
+    text-align: center;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 200;
+    color: #ccc;
+    background-color: transparent;
+}
+
+nav {
+    background-image: linear-gradient(#247e4b, #040e08be);
+    padding-bottom: 10px;
+    padding-top: 15px;
+        
+}
+
+nav > a {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+    color: white;
+    font-weight: 100;
+    font-size: 12px;
+    margin-left: 15px;
+}
+
+a:hover {
+    background-color:#84e1ad;
+    border-radius: 5px;
+    color: black;
+    padding: 6px;
+    font-weight: 500;
+}
+
+h1 {
+    font-family: iDroid;
+    margin-left: 10px;
+    color: #013819;
+    font-weight: bolder;
+    
+}
+
+h2.info {
+    font-family: iDroid;
+    color: #015224;
+    background-color: #84e1ad;
+    background-image: linear-gradient(to right, #95ddb4, rgb(255, 255, 255));
+    margin-left: 10px;
+    padding-left: 10px;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    text-align: justify;
+    text-indent: 20px;
+}
+
+p.fim {
+    padding: 5px 10px 30px 10px
+    
+}
+
+h2.aprendamais {
+    background-color: #056e32ef;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    color: white;
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    border-radius: 12px 12px 0px 0px;    
+}
+
+.irina > img, .dandroid > img {
+    width: 100%;
+}
+
+.bugdroid > img {
+    display: block;
+    margin: auto;    
+}
+
+.divextra {
+    background-color: #40cc7d63;
+    border-radius: 10px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    box-shadow: 1px 1px 4px 0px #000000ab;
+}
+
+.divextra > p {
+    margin: 10px;
+    padding: 0px 10px 8px 10px;
+}
+
+ul {
+    display: inline-table;
+    list-style-type: none;
+}
+
+@media screen and (max-width: 500px) {
+    .versoesandroid1 {
+        margin-left: auto;
+
+    }
+
+}
+
+@media screen and (min-width: 600px) {
+    .versoesandroid1 {
+        margin-left: 15vw;
+
+    }
+}
+
+/*
+main > #video{
+    background-color: #015224;
+    margin: 0px -15px 0px -15px;
+    padding: 15px;    
+}
+
+.video {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    
+}
+*/
+/*Codigo para video responsivo*/
+.embed-container {
+    background-color: #015224;
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    height: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+   }
+.embed-container iframe, .embed-container object, .embed-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+   }
+
+main {
+    display: block;
+    background-color: white;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1px 18px 0px 18px;
+    box-shadow: 0px 0px 5px 1px #000000d1;
+    border-radius: 0px 0px 10px 10px;
+}
+
+footer {
+    background-color: #06341a;
+    padding: 6px;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 400;
+    color: white;
+}

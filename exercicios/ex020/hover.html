@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de hover</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        div > p {
+            display: none;
+        }
+
+        div:hover > p {
+            display: block;
+            color: azure;
+            background-color: brown;
+            width: 250px;
+        }
+
+        div:hover {
+            color: red;
+
+        }
+
+        div > ul {
+            display: none;
+        }
+
+        div:hover > ul {
+            display: block;
+            
+        }
+
+        .testemenu {
+            width: 50px;
+        }
+
+        .itens {
+            width: 60px;
+        }
+
+        .img {
+            width: 80px;
+            height: 80px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de Hover</h1>
+    <p>Passe o mouse sobre o texto abaixo</p>
+    <div>
+        Passe o mouse aqui
+        <p>TEXTO ESCONDIDO...</p> 
+    </div>
+    <p>Fim do exemplo</p>
+    <br>
+    <h2>Tentanto criar um Menu</h2>
+    <div class="testemenu">
+        <img class="img" src="menu.png" alt="Menu">
+        <ul class="itens">
+            <li>item 01</li>
+            <li>item 02</li>
+            <li>item 03</li>
+            <li>item 04</li>
+            <li>item 05</li>
+        </ul>
+    </div>
+</body>
+</html>
