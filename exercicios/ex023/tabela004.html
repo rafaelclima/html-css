@@ -10,6 +10,25 @@
             font-family: Arial, Helvetica, sans-serif;
         }
 
+        tbody > tr:nth-child(odd) { /*odd / 2n / 2n-1*/
+            background-color: lightgray;
+            font-weight: bold;
+        }
+
+        th.homens {
+            background-color: lightgray;
+            font-style: italic;
+        }
+
+        th.mulheres {
+            font-style: italic;
+        }
+
+        thead {
+            background-color: rgb(49, 49, 49);
+            color: white;
+        }
+
         table {
             width: 600px;
             border-collapse: collapse;
@@ -37,12 +56,12 @@
             <tr>
                 <th scope="col">Grupo</th>
                 <th scope="col">Nomes</th>
-                <th scope="col" colspan="3">Filmes</th>
+                <th scope="colgroup" colspan="3">Filmes</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <th scope="rowgroup" rowspan="3">Mulheres</th>
+                <th scope="rowgroup" rowspan="3" class="mulheres">Mulheres</th>
                 <td>Ana Maria</td>
                 <td>Alien</td>
                 <td>Rambo</td>
@@ -61,7 +80,7 @@
                 <td>Big Hero</td>
             </tr>
             <tr>
-                <th scope="rowgroup" rowspan="3">Homens</th>
+                <th scope="rowgroup" rowspan="3" class="homens">Homens</th>
                 <td>Bruno Mendonça</td>
                 <td>Intocáveis</td>
                 <td>Amnésia</td>
